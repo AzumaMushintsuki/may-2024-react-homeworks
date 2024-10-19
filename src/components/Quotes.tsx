@@ -8,7 +8,7 @@ const Todos: FC<QuotesProps> = ({quotes}) => {
     return (
         <div>
             {
-                quotes.map(item => (<div>{item.quote}</div>))
+                quotes.map(item => (<div><h3>{item.quote} - <i>{item.author}</i></h3></div>))
             }
 
         </div>
