@@ -11,7 +11,7 @@ const QuotesPage = () => {
     const [query, setQuery] = useSearchParams({page: '1'});
     const [quotes, setQuotes] = useState<IQuotes[]>([]);
     const [flagForward, setFlagForward] = useState<boolean>(false);
-    const [flaBackward, setFlagBackward] = useState<boolean>(false);
+    const [flagBackward, setFlagBackward] = useState<boolean>(false);
 
     useEffect(() => {
         const page = query.get('page');

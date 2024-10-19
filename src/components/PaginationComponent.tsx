@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import {useSearchParams} from "react-router-dom";
 
 type PaginationProps= {flagForward:boolean, flagBackward: boolean};
-const PaginationComponent:FC<PaginationProps> = () => {
+const PaginationComponent:FC<PaginationProps> = (flagForward,flagBackward) => {
     const [qwery, setQuery] = useSearchParams({page: `1`})
 
     const onclickBack = ()=>{
