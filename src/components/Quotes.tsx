@@ -4,15 +4,15 @@ import {IQuotes} from "../models/IQuotes";
 type QuotesProps = {
     quotes: IQuotes[];
 }
-const Todos: FC<QuotesProps> = ({quotes}) => {
+const Quotes: FC<QuotesProps> = ({quotes}) => {
     return (
         <div>
             {
-                quotes.map(item => (<div><h3>{item.quote} - <i>{item.author}</i></h3></div>))
+                quotes.map(item => (<div><h4>{item.quote} - <i><b>{item.author}</b></i></h4></div>))
             }
 
         </div>
     );
 };
 
-export default Todos;
+export default Quotes;
